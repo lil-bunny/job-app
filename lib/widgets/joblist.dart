@@ -199,8 +199,10 @@ class _JobListState extends State<JobList> {
                                                   //  Colors.indigo,
                                                 ),
                                                 Text(
-                                                    '${widget.snapshot[index]['job_type']}'
-                                                        .replaceAll('_', ' ')),
+                                                  '${widget.snapshot[index]['job_type']}'
+                                                      .replaceAll('_', ' '),
+                                                  style: GoogleFonts.alata(),
+                                                ),
                                               ],
                                             ),
                                             ButtonBar(
@@ -215,7 +217,9 @@ class _JobListState extends State<JobList> {
                                                   // Colors.pink[400],
                                                 ),
                                                 Text(
-                                                    '${widget.snapshot[index]['candidate_required_location']}'),
+                                                  '${widget.snapshot[index]['candidate_required_location']}',
+                                                  style: GoogleFonts.actor(),
+                                                ),
                                               ],
                                             ),
                                           ],
@@ -251,8 +255,11 @@ class _JobListState extends State<JobList> {
 
                             //  Colors.indigo,
                           ),
-                          Text('${widget.snapshot[index]['job_type']}'
-                              .replaceAll('_', ' '))
+                          Text(
+                            '${widget.snapshot[index]['job_type']}'
+                                .replaceAll('_', ' '),
+                            style: GoogleFonts.alata(),
+                          )
                         ],
                       ),
                       ButtonBar(
@@ -267,7 +274,9 @@ class _JobListState extends State<JobList> {
                             // Colors.pink[400],
                           ),
                           Text(
-                              '${widget.snapshot[index]['candidate_required_location']}')
+                            '${widget.snapshot[index]['candidate_required_location']}',
+                            style: GoogleFonts.actor(),
+                          )
                         ],
                       ),
                     ],
