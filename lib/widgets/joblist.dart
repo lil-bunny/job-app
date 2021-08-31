@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class JobList extends StatefulWidget {
@@ -98,8 +99,9 @@ class _JobListState extends State<JobList> {
                                                   margin: EdgeInsets.all(20),
                                                   child: Text(
                                                     "${removeAllHtmlTags(widget.snapshot[index]['description'])}",
-                                                    style: new TextStyle(
-                                                      fontSize: 12.0,
+                                                    style:
+                                                        GoogleFonts.benchNine(
+                                                      fontSize: 15.0,
                                                       color: Colors.black,
                                                     ),
                                                     overflow: TextOverflow.clip,
@@ -162,8 +164,8 @@ class _JobListState extends State<JobList> {
                                         ),
                                     Text(
                                       '${widget.snapshot[index]['company_name']}',
-                                      style: TextStyle(
-                                        fontSize: 20,
+                                      style: GoogleFonts.benchNine(
+                                        fontSize: 25,
                                         letterSpacing: 2,
                                         color: Colors.indigo,
                                       ),
@@ -171,10 +173,12 @@ class _JobListState extends State<JobList> {
                                     Wrap(
                                       direction: Axis.vertical,
                                       runSpacing: 5,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.center,
                                       children: [
                                         Text(
                                           '${widget.snapshot[index]['title']}',
-                                          style: TextStyle(
+                                          style: GoogleFonts.aBeeZee(
                                               fontWeight: FontWeight.w500,
                                               fontStyle: FontStyle.italic),
                                         ),
@@ -230,7 +234,7 @@ class _JobListState extends State<JobList> {
                     children: [
                       Text(
                         '${widget.snapshot[index]['title']}',
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic),
                       ),
@@ -269,14 +273,19 @@ class _JobListState extends State<JobList> {
                     ],
                   ),
                 ),
-                title: Text(
-                  '${widget.snapshot[index]['company_name']}',
-                  style: TextStyle(
-                    fontSize: 20,
-                    letterSpacing: 2,
-                    color: Colors.indigo,
-                  ),
-                ),
+                title: Text('${widget.snapshot[index]['company_name']}',
+                    style: GoogleFonts.benchNine(
+                      color: Colors.indigo,
+                      fontSize: 30,
+                      letterSpacing: 2,
+                    )
+
+                    // TextStyle(
+                    //   fontSize: 20,
+                    //   letterSpacing: 2,
+                    //   color: Colors.indigo,
+                    // ),
+                    ),
                 contentPadding: EdgeInsets.all(10),
                 leading: CircleAvatar(
                     backgroundColor: (index % 2 == 0)

@@ -69,8 +69,9 @@ class _JobScreenState extends State<JobScreen> {
           height: double.infinity,
           color: Colors.indigo,
           child: Center(
-              child: SpinKitFadingCube(
+              child: SpinKitPouringHourGlassRefined(
             color: Colors.amber,
+            size: 150,
           )
 
               //      SpinKitDoubleBounce(
